@@ -444,6 +444,17 @@
         <len>2</len>
       </device>
     </command>
+    <command name="getTempVListM3" protocmd="getaddr">
+      <addr>4900</addr>
+      <len>2</len>
+      <unit>UT</unit>
+      <description>Ermittle die Vorlauftemperatur M3 in Grad C</description>
+      <device ID="20CB">
+        <addr>4900</addr>
+        <len>2</len>
+        <unit>UT</unit>
+      </device>
+    </command>
     <command name="getTempVLsollM1" protocmd="getaddr">
       <addr>2544</addr>
       <len>2</len>
@@ -484,6 +495,20 @@
         <len>2</len>
         <unit>UT</unit>
       </device>
+    </command>
+    <command name="getRoomTempM2" protocmd="getaddr">
+      <addr>0898</addr>
+      <len>2</len>
+      <unit>UT</unit>
+      <description>Room Temp M2 in °C</description>
+      <device ID="2053"/>
+    </command>
+    <command name="getRoomTempM3" protocmd="getaddr">
+      <addr>089A</addr>
+      <len>2</len>
+      <unit>UT</unit>
+      <description>Room Temp M3 in °C</description>
+      <device ID="2053"/>
     </command>
     <!-- SOLAR -->
     <command name="getTempKol" protocmd="getaddr">
@@ -576,6 +601,20 @@
       <description>Setze die Raumsolltemperatur normal M2 in Grad C</description>
       <device ID="2053"/>
     </command>
+    <command name="getTempRaumNorSollM3" protocmd="getaddr">
+      <addr>4306</addr>
+      <len>1</len>
+      <unit>UTI</unit>
+      <description>Ermittle die Raumsolltemperatur normal M3 in Grad C</description>
+      <device ID="2053"/>
+    </command>
+    <command name="setTempRaumNorSollM3" protocmd="setaddr">
+      <addr>4306</addr>
+      <len>1</len>
+      <unit>UTI</unit>
+      <description>Setze die Raumsolltemperatur normal M3 in Grad C</description>
+      <device ID="2053"/>
+    </command>
     <command name="getTempRaumRedSollM1" protocmd="getaddr">
       <addr>2307</addr>
       <len>1</len>
@@ -610,6 +649,20 @@
       <len>1</len>
       <unit>UTI</unit>
       <description>Setze die Raumsolltemperatur reduziert M2 in Grad C</description>
+      <device ID="2053"/>
+    </command>
+    <command name="getTempRaumRedSollM3" protocmd="getaddr">
+      <addr>4307</addr>
+      <len>1</len>
+      <unit>UTI</unit>
+      <description>Ermittle die Raumsolltemperatur reduziert M3 in Grad C</description>
+      <device ID="2053"/>
+    </command>
+    <command name="setTempRaumRedSollM3" protocmd="setaddr">
+      <addr>4307</addr>
+      <len>1</len>
+      <unit>UTI</unit>
+      <description>Setze die Raumsolltemperatur reduziert M3 in Grad C</description>
       <device ID="2053"/>
     </command>
     <!-- PUMPEN -->

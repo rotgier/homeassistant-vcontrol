@@ -1087,9 +1087,117 @@
       <description>Betriebsart M3</description>
       <device ID="2053"/>
     </command>
+
+
+    <command name="getBetriebArtCustomM1" protocmd="getaddr">
+      <addr>2500</addr>
+      <len>1</len>
+      <unit>BA</unit>
+      <description>Betriebsart M1</description>
+      <device ID="2053"/>
+    </command>
+    <command name="setBetriebArtCustomM1" protocmd="setaddr">
+      <addr>2500</addr>
+      <len>1</len>
+      <unit>BA</unit>
+      <description>Betriebsart M1</description>
+      <device ID="2053"/>
+    </command>
+    <command name="getBetriebArtCustomM2" protocmd="getaddr">
+      <addr>3500</addr>
+      <len>1</len>
+      <unit>BA</unit>
+      <description>Betriebsart M2</description>
+      <device ID="2053"/>
+    </command>
+    <command name="setBetriebArtCustomM2" protocmd="setaddr">
+      <addr>3500</addr>
+      <len>1</len>
+      <unit>BA</unit>
+      <description>Betriebsart M2</description>
+      <device ID="2053"/>
+    </command>
+    <command name="getBetriebArtCustomM3" protocmd="getaddr">
+      <addr>4500</addr>
+      <len>1</len>
+      <unit>BA</unit>
+      <description>Betriebsart M2</description>
+      <device ID="2053"/>
+    </command>
+    <command name="setBetriebArtCustomM3" protocmd="setaddr">
+      <addr>4500</addr>
+      <len>1</len>
+      <unit>BA</unit>
+      <description>Betriebsart M2</description>
+      <device ID="2053"/>
+    </command>
+
+
+    <command name="getBetriebArtReadWriteM1" protocmd="getaddr">
+      <addr>2323</addr>
+      <len>1</len>
+      <unit>ST</unit>
+      <description>Betriebsart M1</description>
+      <device ID="2053"/>
+    </command>
+    <command name="setBetriebArtReadWriteM1" protocmd="setaddr">
+      <addr>2323</addr>
+      <len>1</len>
+      <unit>ST</unit>
+      <description>Betriebsart M1</description>
+      <device ID="2053"/>
+    </command>
+
+    <command name="getBetriebArtReadWriteM2" protocmd="getaddr">
+      <addr>3323</addr>
+      <len>1</len>
+      <unit>ST</unit>
+      <description>Betriebsart M2</description>
+      <device ID="2053"/>
+    </command>
+    <command name="setBetriebArtReadWriteM2" protocmd="setaddr">
+      <addr>3323</addr>
+      <len>1</len>
+      <unit>ST</unit>
+      <description>Betriebsart M2</description>
+      <device ID="2053"/>
+    </command>
+
+    <command name="getBetriebArtReadWriteM3" protocmd="getaddr">
+      <addr>4323</addr>
+      <len>1</len>
+      <unit>ST</unit>
+      <description>Betriebsart M3</description>
+      <device ID="2053"/>
+    </command>
+    <command name="setBetriebArtReadWriteM3" protocmd="setaddr">
+      <addr>4323</addr>
+      <len>1</len>
+      <unit>ST</unit>
+      <description>Betriebsart M3</description>
+      <device ID="2053"/>
+    </command>
+
+
+    <command name="getBetriebArtOtherM2" protocmd="getaddr">
+      <addr>3549</addr>
+      <len>1</len>
+      <unit>BA</unit>
+      <description>Betriebsart M2</description>
+      <device ID="2053"/>
+    </command>
+    <command name="setBetriebArtOtherM2" protocmd="setaddr">
+      <addr>3549</addr>
+      <len>1</len>
+      <unit>BA</unit>
+      <description>Betriebsart M2</description>
+      <device ID="2053"/>
+    </command>
+
+
     <!--  Betriebsart set  -->
     <command name="setBetriebArtM1" protocmd="setaddr">
-      <addr>2323</addr>
+      <addr>2301</addr>
       <len>1</len>
       <unit>BA</unit>
       <description>Setze Betriebsart M1</description>

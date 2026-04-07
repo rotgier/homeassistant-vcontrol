@@ -695,6 +695,18 @@
         <unit>RT</unit>
       </device>
     </command>
+    <command name="getPumpeStatusM3" protocmd="getaddr">
+      <addr>4906</addr>
+      <len>1</len>
+      <unit>RT</unit>
+      <description>Ermittle den Status der Pumpe M3</description>
+      <device ID="2053"/>
+      <device ID="20CB">
+        <addr>7667</addr>
+        <len>1</len>
+        <unit>RT</unit>
+      </device>
+    </command>
     <command name="getPumpeDrehzahlM2" protocmd="getaddr">
       <addr>3906</addr>
       <len>1</len>
@@ -703,6 +715,18 @@
       <device ID="2053"/>
       <device ID="20CB">
         <addr>7665</addr>
+        <len>2</len>
+        <unit>PR2</unit>
+      </device>
+    </command>
+    <command name="getPumpeDrehzahlM3" protocmd="getaddr">
+      <addr>4906</addr>
+      <len>1</len>
+      <unit>RT</unit>
+      <description>Ermittle die Drehzahl der Pumpe M2</description>
+      <device ID="2053"/>
+      <device ID="20CB">
+        <addr>7667</addr>
         <len>2</len>
         <unit>PR2</unit>
       </device>
@@ -1055,13 +1079,32 @@
       <unit>BA</unit>
       <description>Betriebsart M2</description>
       <device ID="2053"/>
-    </command>   
+    </command>
+    <command name="getBetriebArtM3" protocmd="getaddr">
+      <addr>4301</addr>
+      <len>1</len>
+      <unit>BA</unit>
+      <description>Betriebsart M3</description>
+      <device ID="2053"/>
+    </command>
     <!--  Betriebsart set  -->
     <command name="setBetriebArtM1" protocmd="setaddr">
-      <addr>2301</addr>
+      <addr>2323</addr>
       <len>1</len>
       <unit>BA</unit>
       <description>Setze Betriebsart M1</description>
+    </command>
+    <command name="setBetriebArtM2" protocmd="setaddr">
+      <addr>3301</addr>
+      <len>1</len>
+      <unit>BA</unit>
+      <description>Setze Betriebsart M2</description>
+    </command>
+    <command name="setBetriebArtM3" protocmd="setaddr">
+      <addr>4301</addr>
+      <len>1</len>
+      <unit>BA</unit>
+      <description>Setze Betriebsart M4</description>
     </command>
     <!-- SPARBETRIEB (SPARSCHWEIN) -->
     <command name="getBetriebSparM1" protocmd="getaddr">

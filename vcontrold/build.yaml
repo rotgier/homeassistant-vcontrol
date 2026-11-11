@@ -1,0 +1,5 @@
+# Local build on Home Assistant: Supervisor passes BUILD_FROM from here and
+# would otherwise fall back to the Alpine base, which the Dockerfile cannot use.
+build_from:
+  amd64: ghcr.io/home-assistant/base-debian:trixie-2026.08.0
+  aarch64: ghcr.io/home-assistant/base-debian:trixie-2026.08.0

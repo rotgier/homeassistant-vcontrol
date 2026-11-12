@@ -1,6 +1,6 @@
 # https://developers.home-assistant.io/docs/add-ons/configuration#add-on-config
 name: Vcontrol add-on (rotgier)
-version: "1.14.0-rotgier.1"
+version: "1.14.0-rotgier.0-plain"
 slug: vcontrold_rotgier
 description: MQTT bridge for Viessmann vcontrold
 url: "https://github.com/Alexandre-io/homeassistant-vcontrol"
